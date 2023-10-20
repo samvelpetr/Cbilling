@@ -436,7 +436,26 @@ h1 {
 .howToGet__chrome2 .howToGetAccess_photosBlock {
     border: none;
 }
+.howToGet__firefox{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.howToGet__firefox-active{
+    display: flex;
+}
+.header2{
+    padding-bottom: 50px;   
+}
+.safety2{
+    padding: 50px 0;
+}
+.howToGetAccessPC{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .howToGet__lastText {
     margin-top: 20px;
     padding-bottom: 100px;
@@ -844,5 +863,8 @@ h1 {
     }
     .howToGetAccess_photosBlock2{
         padding-bottom: 25px;
+    }
+    .howToGetAccess_names2{
+        gap: 50px;
     }
 }

@@ -18,18 +18,43 @@ burger.onclick = () =>{
     last.classList.toggle('last-item')
 }
 
-
-howToGetAccess_name.forEach((e,i)=>{
-    e.addEventListener('click',function(){
-        howToGetAccess_name.forEach((el,index)=>{
-            el.classList.remove('howToGetAccess_name-active')
-            HowToGetAccess__chrome[index].classList.remove('HowToGetAccess-active')
-            howToGet__chrome2[index].classList.remove('howToGet__chrome2-active')
-        })  
-        e.classList.add('howToGetAccess_name-active')
-        HowToGetAccess__chrome[i].classList.add('HowToGetAccess-active')
-        howToGet__chrome2[i].classList.add('howToGet__chrome2-active')
-
-
+try {
+    howToGetAccess_name.forEach((e,i)=>{
+        e.addEventListener('click',function(){
+            howToGetAccess_name.forEach((el,index)=>{
+                el.classList.remove('howToGetAccess_name-active')
+                HowToGetAccess__chrome[index].classList.remove('HowToGetAccess-active')
+                howToGet__chrome2[index].classList.remove('howToGet__chrome2-active')
+            })  
+            e.classList.add('howToGetAccess_name-active')
+            HowToGetAccess__chrome[i].classList.add('HowToGetAccess-active')
+            howToGet__chrome2[i].classList.add('howToGet__chrome2-active')
+    
+    
+        })
     })
-})
+} catch (error) {
+    
+}
+
+
+try{
+    const howToGetAccess_names2=document.querySelectorAll('.howToGetAccess_names2 div');
+    const howToGet__firefox=document.querySelectorAll('.howToGet__firefox');
+    howToGetAccess_names2.forEach((e,i)=>{
+        e.addEventListener('click',function(){
+            howToGetAccess_names2.forEach((el,index)=>{
+                el.classList.remove('howToGetAccess_name-active')
+                howToGet__firefox[index].classList.remove('howToGet__firefox-active')
+            })  
+            e.classList.add('howToGetAccess_name-active')
+            howToGet__firefox[i].classList.add('howToGet__firefox-active')
+    
+    
+        })
+    })
+
+}
+catch(ee){
+
+}
